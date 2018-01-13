@@ -1,5 +1,5 @@
 /**
- * IMPORTANT: Make sure you are using the correct package name. 
+ * IMPORTANT: Make sure you are using the correct package name.
  * This example uses the package name:
  * package com.example.android.justjava
  * If you get an error when copying this code into Android studio, update it to match teh package name found
@@ -30,12 +30,30 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * This method displays the given price on the screen.
+     */
+    private void displayPrice(int number) {
+        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
+        priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
+    }
+
+    /**
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int quantity = 0;
-        display(quantity);
-        displayPrice(quantity*4);
+       int price = quantity * 5;
+        String priceMessage = "Total $ " + price;
+       priceMessage = priceMessage + "\nThank you!";
+       displayMessage(priceMessage);
+            }
+
+
+    /**
+     * This method displays the given text on the screen.
+     */
+    private void displayMessage(String message) {
+        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
+        priceTextView.setText(message);
     }
 
     /**
@@ -44,15 +62,6 @@ public class MainActivity extends AppCompatActivity {
     private void display(int number) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + number);
-    }
-
-
-    /**
-     * This method displays the given price on the screen.
-     */
-    private void displayPrice(int number) {
-        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
-        priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
     }
 
     /**
