@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void increment(View view) {
         if (quantity == 100) {
-            Toast.makeText(this, "You can't have more than 100 cups of coffe", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.more, Toast.LENGTH_SHORT).show();
             return;
 
         }
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void decrement(View view) {
         if (quantity == 1) {
-            Toast.makeText(this, "You can't have less than 1 cups of coffe", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.less, Toast.LENGTH_SHORT).show();
             return;
         }
             displayQuantity(quantity = quantity - 1);

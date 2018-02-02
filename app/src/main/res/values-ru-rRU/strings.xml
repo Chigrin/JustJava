@@ -13,4 +13,6 @@
     <string name="chocolate_text">"Хотите добавить шоколад? "</string>
     <string name="cream_text">"Хотите добавить взбитый крем? "</string>
     <string name="name_text">"Имя: "</string>
+    <string name="more">Вы не можете заказать болешь 100 чашек!</string>
+    <string name="less">Вы не можете заказать менее 1 чашки!</string>
 </resources>

@@ -12,4 +12,6 @@
     <string name="chocolate_text">\nDo you need to add chocolate? </string>
     <string name="cream_text">\nDo you need to add whipped cream? </string>
     <string name="name_text">Name: </string>
+    <string name="more">You can\'t have more than 100 cups of coffe</string>
+    <string name="less">You can\'t have less than 1 cups of coffe</string>
 </resources>
